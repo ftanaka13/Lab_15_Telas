@@ -9,10 +9,28 @@
         android:id="@+id/primeiroFragment"
         android:name="br.com.faculdadeimpacta.lab_15_telas.PrimeiroFragment"
         android:label="fragment_primeiro"
-        tools:layout="@layout/fragment_primeiro" />
+        tools:layout="@layout/fragment_primeiro">
+        <action
+            android:id="@+id/action_primeiroFragment_to_segundoFragment"
+            app:destination="@id/segundoFragment" />
+        <argument
+            android:name="valor"
+            android:defaultValue="0"
+            app:argType="integer" />
+    </fragment>
     <fragment
         android:id="@+id/segundoFragment"
         android:name="br.com.faculdadeimpacta.lab_15_telas.SegundoFragment"
         android:label="fragment_segundo"
-        tools:layout="@layout/fragment_segundo" />
+        tools:layout="@layout/fragment_segundo">
+        <action
+            android:id="@+id/action_segundoFragment_to_primeiroFragment"
+            app:destination="@id/primeiroFragment" />
+        <argument
+            android:name="valor"
+            app:argType="integer" />
+        <argument
+            android:name="tipo"
+            app:argType="integer" />
+    </fragment>
 </navigation>
