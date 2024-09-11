@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/primeiroFragment">
+
+    <fragment
+        android:id="@+id/primeiroFragment"
+        android:name="br.com.faculdadeimpacta.lab_15_telas.PrimeiroFragment"
+        android:label="fragment_primeiro"
+        tools:layout="@layout/fragment_primeiro" />
+    <fragment
+        android:id="@+id/segundoFragment"
+        android:name="br.com.faculdadeimpacta.lab_15_telas.SegundoFragment"
+        android:label="fragment_segundo"
+        tools:layout="@layout/fragment_segundo" />
+</navigation>
